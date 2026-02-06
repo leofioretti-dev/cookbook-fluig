@@ -131,7 +131,7 @@ Todas as configurações do campo deverão ser atribuídas ao objeto da propried
     2.  `label`: Nome que será atribuído no formulário para facilitar o entendimento do usuário;
     3.  `visible`: Se essa coluna será visível ou não, nesse caso, podendo ser apenas para preencher campos futuros com a função setSelectedZoomItem (ainda chegaremos lá);
     4.  `standard`: Valor default é false, caso coloque como true, o Fluig utilizará essa coluna para ordernar os registros de forma crescente;
-    5.  `search`: Se essa coluna deverá ser a padrão utilizada como constraint quando o usuário começar a digitar o valor e enviar ao dataset para filtrar os resultados;
+    5.  `search`: ~~Se essa coluna deverá ser a padrão utilizada como constraint quando o usuário começar a digitar o valor e enviar ao dataset para filtrar os resultados;~~ conforme reportardo pelo Bruno Gasparetto [Issue #1](https://github.com/leofioretti-dev/cookbook-fluig/issues/1) essa funcionalidade busca, na verdade, da coluna que está no displayKey e não da coluna que está atribuído. Será aberto um chamado na TOTVS para identificar se é uma falha da aplicação ou da documentação;
 
 ```html
 <input type="zoom" class="form-control" id="USUARIO" name="USUARIO"
